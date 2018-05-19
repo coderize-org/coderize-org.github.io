@@ -31,6 +31,7 @@
 
     <link rel="index" title="Home" href="https://www.coderize.org/">
     <link rel="canonical" href="https://www.coderize.org/">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;subset=latin-ext">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="/assets/styles/index.css">
@@ -41,10 +42,6 @@
   </head>
 
   <body>
-    <noscript id="deferred-styles">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;subset=latin-ext">
-    </noscript>
-
     <!--[if lte IE 9]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
@@ -370,23 +367,6 @@
   <p>2018 © coderize.org</p>
 </footer>
 
-    <script src="/assets/scripts/index.js" defer></script>
-    <script>
-      // https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery
-      var loadDeferredStyles = function() {
-        var addStylesNode = document.getElementById("deferred-styles");
-        var replacement = document.createElement("div");
-        replacement.innerHTML = addStylesNode.textContent;
-        document.body.appendChild(replacement);
-        addStylesNode.parentElement.removeChild(addStylesNode);
-      };
-      var raf =
-        window.requestAnimationFrame ||
-        window.mozRequestAnimationFrame ||
-        window.webkitRequestAnimationFrame ||
-        window.msRequestAnimationFrame;
-      if (raf) raf(function() {window.setTimeout(loadDeferredStyles, 0);});
-      else window.addEventListener("load", loadDeferredStyles);
-    </script>
+    <script src="/assets/scripts/index.js"></script>
   </body>
 </html>
