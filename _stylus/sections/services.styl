@@ -1,0 +1,83 @@
+$serviceMinHeight = 300px
+$serviceMaxWidth = 325px
+$serviceMainScale = 1.075
+
+.service
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+
+  min-height: $serviceMinHeight
+  max-width: $serviceMaxWidth
+
+  padding: 2rem 3rem 2.5rem
+  margin: 2rem auto
+  perspective: 600px
+
+  color:white
+
+  &__headline,
+  &__description
+    color: #f1f1f2
+    text-align: center
+    text-rendering: geometricPrecision
+
+    margin: 0
+    padding: 0
+
+  &__headline
+    font-size: 2.25em
+    padding: 1rem
+
+  &__description
+    flex: 1
+    line-height: 1.5
+
+  &__details
+    padding: 0 1rem
+
+  &__face
+    display: flex
+    flex-direction: column
+
+    align-items: center
+    justify-content: center
+
+    position: absolute
+    top: 0
+    left: 0
+
+    width: 100%
+    height: 100%
+
+    background-color: #343f4a
+    box-shadow: rgba(200, 200, 200, 0.325) 0px 6px 30px 2px
+    border-radius: 10px
+
+    transition: all 2s ease
+
+  &--main
+    margin-top: 0
+
+    min-height: ($serviceMinHeight * $serviceMainScale)
+    max-width: ($serviceMaxWidth * $serviceMainScale)
+    font-size: (1em * $serviceMainScale)
+
+  &--front
+    padding: 1rem 2rem 2rem
+    z-index: 1
+
+  &--back
+    transform: rotateY(180deg)
+    z-index: 0
+
+  &:focus &--front
+    transform: rotateY(-180deg)
+    transition: all .7s ease
+    z-index: 0
+
+  &:focus &--back
+    transform: rotateY(0deg)
+    transition: all .7s ease
+    z-index: 1

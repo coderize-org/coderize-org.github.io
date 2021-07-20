@@ -1,0 +1,32 @@
+<section id="contact" class="section section__contact section--accent section--bg-3 section--bg-top">
+  <article class="container">
+    <header class="section__header">
+      <h3 class="section__header__heading">Contact us</h3>
+      <p class="section__header__subtext">Let's create something great!</p>
+    </header>
+
+    <form action="https://formspree.io/contact@coderize.org" method="POST">
+      <div class="row">
+        <div class="col-sm">
+          <label class="label" for="email">Your e-mail</label>
+          <input class="input input--full-width" type="email" name="email" id="email" placeholder="example@gmail.com" required>
+        </div>
+
+        <div class="col-sm">
+          <label class="label" for="name">Your name</label>
+          <input class="input input--full-width" type="text" name="name" id="name" placeholder="John Doe" required>
+        </div>
+      </div>
+
+      <div>
+        <label class="label" for="subject">Subject</label>
+        <input class="input input--full-width" type="text" name="_subject" id="subject" placeholder="Hey!" required>
+
+        <label class="label" for="message">Message</label>
+        <textarea class="textarea textarea--full-width" name="content" id="message" rows="10" placeholder="What can we help you with?" required></textarea>
+      </div>
+
+      <input class="button button--submit" type="submit" name="submit" value="Send">
+    </form>
+  </article>
+</section>

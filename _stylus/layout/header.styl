@@ -1,0 +1,43 @@
+.header
+  position: relative
+
+  height: 100%
+  max-height: 1000px;
+  min-height: 600px;
+  width: 100%
+
+  background-color: #5CD3BB
+
+.hero
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+  height: 100%
+  width: 100%
+
+  color: white
+
+  &__prompt
+    position: absolute
+    bottom: -5px
+    @media screen and (max-width: 575px)
+      bottom: -13px
+
+    &__icon
+      height: 4rem
+
+  &__headline,
+  &__tagline
+    margin: 0
+    padding: 0
+
+    text-align: center
+    color: white
+
+  &__headline
+    font-size: 5rem
+
+  &__tagline
+    font-size: 2rem

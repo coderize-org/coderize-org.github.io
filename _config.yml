@@ -1,0 +1,18 @@
+title: Coderize
+about: Coderize is a small software development company. Our main goal is to create high quality, reliable and extensible products which can be delivered fast.
+email: contact@coderize.org
+host: 0.0.0.0
+
+url: ""
+baseurl: ""
+markdown: kramdown
+
+# plugins:
+#   - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

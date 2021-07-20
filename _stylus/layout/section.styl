@@ -1,0 +1,65 @@
+.section
+  margin: 0 auto
+  padding 0.15rem 2rem 7rem
+
+  background-color: white
+  color: #46525d
+
+  &--alternate
+    background-color: #fafafa
+
+  &--bg-1,
+  &--bg-2,
+  &--bg-3,
+  &--bg-4
+    background-position: bottom
+    background-repeat: repeat-x
+    background-size: 85%
+
+    @media screen and (min-width: 2300px)
+      background-size: initial
+
+  &--bg-top
+    background-position: top
+
+  &--bg-1
+    background-image: url(/assets/images/backgrounds/background-1.png)
+    background-size: 100%
+
+  &--bg-2
+    background-image: url(/assets/images/backgrounds/background-2.png)
+
+  &--bg-3
+    background-image: url(/assets/images/backgrounds/background-3.png)
+
+  &--bg-4
+    background-image: url(/assets/images/backgrounds/background-2.png)
+    background-size: 100%
+
+  &--accent
+    background-color: #343f4a
+    color: white
+
+  &__header
+    margin: 3rem 0 5rem 0
+    text-align: center
+    text-rendering: geometricPrecision
+
+    &__heading,
+    &__subtext
+      margin: 0 auto
+      padding: 0
+
+      color: inherit
+
+    &__heading
+      font-size: 2.5rem
+      line-height: 3rem
+
+      margin-bottom: 1.5rem
+
+    &__subtext
+      font-size: 1.35rem
+      line-height: 2.35rem
+
+      max-width: 515px

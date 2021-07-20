@@ -1,0 +1,21 @@
+// There's no state hooks in BEM as far as I can see in the documentation, so I
+// will make a block for screen-readers, which hiddes the element from users
+// until it's focused by a keyboard shortcut
+.srd
+  position: absolute
+  overflow: hidden
+
+  height: 1px
+  width: 1px
+
+  clip: rect(0 0 0 0)
+
+  &:hover,
+  &:focus
+    display: block
+    z-index: 10000
+
+    clip: auto !important
+
+    height: auto
+    width: auto
